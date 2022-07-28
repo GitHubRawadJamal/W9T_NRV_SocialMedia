@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="@dimen/marginSmall"
+    android:layout_marginVertical="@dimen/marginSmall"
+    android:layout_marginHorizontal="@dimen/marginSmall">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputNewPost"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Update your status..."
+        android:textColorHint="@color/medium_grey_color"
+        android:background="@drawable/edit_text_style"
+        android:layout_marginEnd="@dimen/marginXLarg"
+        android:paddingHorizontal="16dp" android:paddingVertical="8dp"
+        app:shapeAppearanceOverlay="@style/textInputBR"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <ImageView
+        android:id="@+id/icon_publish"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginSmall"
+        android:src="@drawable/ic_publish"
+        app:layout_constraintStart_toEndOf="@id/inputNewPost"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

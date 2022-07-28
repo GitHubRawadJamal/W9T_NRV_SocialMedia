@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="textInputBR">
+        <item name="cornerSize">24dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="imgProfileBR">
+        <item name="cornerSize">32dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+</resources>

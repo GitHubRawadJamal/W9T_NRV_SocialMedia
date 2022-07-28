@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/marginSmall"
+    android:layout_marginVertical="@dimen/marginSmall"
+    android:paddingVertical="@dimen/marginSmall"
+    android:paddingHorizontal="@dimen/marginSmall"
+    android:background="@drawable/edit_text_style"
+    android:elevation="16dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_try"
+        android:background="@drawable/img_profile_style"
+        app:shapeAppearanceOverlay="@style/imgProfileBR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"   android:textSize="@dimen/text_normal_size"
+        android:textColor="@color/text_color"  android:textStyle="bold"
+        android:paddingTop="@dimen/marginVerySmall"
+        android:layout_marginStart="@dimen/marginSmall"
+        app:layout_constraintStart_toEndOf="@id/imgProfile"
+        app:layout_constraintTop_toTopOf="@id/imgProfile" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2022/7/7"   android:textSize="@dimen/text_normal_size"
+        android:textColor="@color/dark_grey_color"  android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/textUserName"
+        app:layout_constraintTop_toBottomOf="@id/textUserName" />
+
+    <ImageView
+        android:id="@+id/iconShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/textDate" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgPost"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/img_post_style"
+        app:shapeAppearanceOverlay="@style/imgProfileBR"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/marginSmall"
+        android:src="@drawable/img_try"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgProfile"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_favorite_border"
+        android:background="@drawable/icon_favorite_style"
+        android:padding="@dimen/marginSmall"
+        android:layout_marginEnd="@dimen/marginSmall"
+        android:layout_marginVertical="@dimen/marginSmall"
+        app:layout_constraintEnd_toEndOf="@id/imgPost"
+        app:layout_constraintBottom_toBottomOf="@id/imgPost" />
+</androidx.constraintlayout.widget.ConstraintLayout>
